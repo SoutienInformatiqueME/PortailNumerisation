@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portail Numérisation</title>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+
+    <!-- Vuetify CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.1.0/dist/vuetify.min.css" rel="stylesheet">
+
+    <!-- Vuetify JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.1.0/dist/vuetify.js"></script>
+
+    <!-- Optional: Material Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <v-app>
+            <v-main>
+                <v-toolbar color="indigo" dark>
+                    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+                    <v-toolbar-title>Portail Numérisation par Moisson Estrie</v-toolbar-title>
+
+                    <!-- <v-spacer></v-spacer>
+
+                    <v-btn icon>
+                        <v-icon>mdi-magnify</v-icon>
+                    </v-btn> -->
+                </v-toolbar>
+            </v-main>
+        </v-app>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify(),
+            data: {
+                title: 'Vuetify in a Static HTML File',
+                count: 0
+            },
+            methods: {
+                increment() {
+                    this.count += 1;
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>
