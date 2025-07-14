@@ -22,17 +22,110 @@
     <div id="app">
         <v-app>
             <v-main>
-                <v-toolbar color="indigo" dark>
-                    <v-app-bar-nav-icon></v-app-bar-nav-icon>
+                <v-card>
+                    <v-app-bar absolute color="#6A76AB" dark shrink-on-scroll prominent
+                        src="https://cdn-ch-prod-bqhwa0ewbpg6eyc2.z01.azurefd.net/prod-img-cache/CDN-ik-images/charityprofile/4/3193/Moisson-Estrie-logo-01_vpD2TEh.png"
+                        fade-img-on-scroll scroll-target="#scrolling-techniques-3">
+                        <template v-slot:img="{ props }">
+                            <v-img v-bind="props"
+                                gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"></v-img>
+                        </template>
+                        <v-app-bar-title>Portail Numérisation</v-app-bar-title>
+                        <template v-slot:extension>
+                            <v-tabs>
+                                <v-tab>Acceuil</v-tab>
+                                <v-tab>Support</v-tab>
+                                <v-tab>Activités de formation</v-tab>
+                                <v-tab>Ressources externes</v-tab>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text>
+                                            <h1 style="margin-bottom:0;">Portail Numérisation</h1>
+                                            <p style="margin : 0; padding-top:0;">Support informatique à la numérisation
+                                                par Moisson Estrie</p>
+                                            <p>Vous trouverez ici des aide-mémoires concernant l'utilisation de <a
+                                                    href="https://gotoucan.app/">GoToucan</a> ainsi que des lien vers
+                                                différentes
+                                                sources pertinentes d'information</p>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text>
+                                            <h1>Maxime Roy (iel/elle/il) - Responsable du support informatique et de la numérisation </h1>
+                                            <p>
+                                                Courriel: 
+                                                <a href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com</a>
+                                                <br>
+                                                Téléphone: 
+                                                819-822-6025 poste 142 <b>...bientôt disponible</b>
+                                            </p>
+                                        </v-card-text>
+                                    </v-card>
 
-                    <v-toolbar-title>Portail Numérisation par Moisson Estrie</v-toolbar-title>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text>
+                                            <h1><b><u>!!! EN CONSTRUCTION !!!</u></b></h1>
 
-                    <!-- <v-spacer></v-spacer>
+                                            <h2><u>Volet Contacts et Événements</u></h2>
+                                            <h3>Personnes, ménages et organisations</h3>
+                                            <h4>Loi 25</h4>
+                                            <h4>Gestion des organisations</h4>
+                                            <h4>Gestion des personnes et ménages</h4>
+                                            <h3>Événements er Rapports</h3>
+                                            <h4>Gestion des évènements</h4>
+                                            <h4>Génération des rapports</h4>
 
-                    <v-btn icon>
-                        <v-icon>mdi-magnify</v-icon>
-                    </v-btn> -->
-                </v-toolbar>
+                                            <v-divider></v-divider>
+                                            <h2><u>Volet Commande et Partages</u></h2>
+
+                                            <v-divider></v-divider>
+                                            <h2><u>Volet Entreposage</u></h2>
+
+                                            <v-divider></v-divider>
+                                            <h2><u>Volets ...</u></h2>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                                <v-tab-item>
+                                    <v-card flat>
+                                        <v-card-text>
+                                            <h2><a href="https://foodbankscanada.ca/fr/">Banques alimentaires Canada</a>
+                                            </h2>
+                                            <p>"C'est l'organisme national à l'origine du Bilan-Faim et initiateur du
+                                                projet de numérisation."</p>
+                                            <v-divider></v-divider>
+                                            <h2><a href="https://banquesalimentaires.org/">Banques alimentaires
+                                                    duQuébec</a></h2>
+                                            <p>"C'est l'association provinciale qui regroupe 33 membres (Moisson et
+                                                associés) et qui est responsable du déploiement de GoToucan auprès de
+                                                ses membres et leurs organismes accrédités."</p>
+                                            <p><a href="assets\aide-mémoire-numérisation.pdf">Aide-mémoire
+                                                    Numérisation</a></p>
+                                            <v-divider></v-divider>
+                                            <h2>Cours par PR2</h2>
+                                            <h3>PR2 - Programme de numérisation des activités d'aide alimentaire</h3>
+                                            <p>"C'est la firme qui a créé et maintient à jour le matériel de formation
+                                                et qui accompagne les organismes pendant leur apprentissage et leurs
+                                                premiers pas sur la plateforme."<br>- BAQ</p>
+                                            <h4><a href="https://pr2ca.odoo.com/slides">Plateforme de formation Oodo</a>
+                                            </h4>
+                                            <p>Vous devez d'abord vous inscrire en suivant le lien vers le <a
+                                                    href="https://pr2ca.odoo.com/survey/start/13829410-d4eb-453f-ad8c-730789dada71">sondage
+                                                    d'inscription</a></p>
+                                        </v-card-text>
+                                    </v-card>
+                                </v-tab-item>
+                            </v-tabs>
+                        </template>
+                    </v-app-bar>
+                    <v-sheet id="scrolling-techniques-3" class="overflow-y-auto" max-height="600">
+                        <v-container style="height: 1000px;"></v-container>
+                    </v-sheet>
+                </v-card>
             </v-main>
         </v-app>
     </div>
