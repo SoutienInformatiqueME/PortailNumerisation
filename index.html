@@ -29,12 +29,14 @@
                         <v-app-bar-title>Portail Numérisation</v-app-bar-title>
                         <template v-slot:extension>
                             <v-tabs>
-                                <v-tab>Acceuil</v-tab>
+                                <!-- TABS -->
+                                <v-tab>Accueil</v-tab>
+                                <v-tab>Tutoriels</v-tab>
                                 <v-tab>Support</v-tab>
                                 <v-tab>Activités de formation</v-tab>
                                 <v-tab>Ressources externes</v-tab>
 
-                                <!-- Acceuil -->
+                                <!-- Accueil -->
                                 <v-tab-item>
                                     <v-card>
                                         <v-card-title>
@@ -45,12 +47,57 @@
                                             </div>
                                         </v-card-title>
                                         <v-card-text>
-                                            <p>Tel que formulé par Banques alimentaires Canada, le Bilan-Faim par sera bientôt réalisé mensuellement. Pour atteindre cet objectif, Banques alimentaires du Québec introduit le logiciel
+                                            <p>Tel que formulé par
+                                                <a target="_blank" href="https://foodbankscanada.ca/fr/">BAC (Banques alimentaires Canada)<i class="mdi mdi-open-in-new"></i>
+                                                </a>, le Bilan-Faim par sera bientôt réalisé mensuellement. Pour atteindre cet objectif,
+                                                <a target="_blank" href="https://banquesalimentaires.org/">BAQ (Banques alimentaires du Québec)<i class="mdi mdi-open-in-new"></i>
+                                                </a>
+                                                introduit le logiciel
                                                 <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
                                                 </a>. En plus d’offrir une multitude de fonctionnalités adaptées à vos opérations, GoToucan facilite grandement la collecte des données nécessaires au Bilan-Faim. Pour vous accompagner, Moisson Estrie vous proposera des activités de formation visant à vous assurer un usage confortable et autonome du logiciel GoToucan.</p>
-                                            <p>Vous trouverez, dans ce portail, des aide-mémoires concernant l'utilisation de GoToucan ainsi que des lien vers différentes sources pertinentes d'information</p>
+                                            <p>Vous trouverez, dans ce portail, des aide-mémoires concernant l'utilisation de GoToucan ainsi que des lien vers différentes sources pertinentes d'information.</p>
                                         </v-card-text>
+                                        <v-card-actions>
+                                            <v-btn target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                            </v-btn>
+                                        </v-card-actions>
                                     </v-card>
+                                </v-tab-item>
+
+                                <!-- Tutoriels -->
+                                <v-tab-item>
+                                    <v-expansion-panels focusable>
+                                        <v-expansion-panel>
+                                            <v-expansion-panel-header>
+                                                Connexion à GoToucan
+                                            </v-expansion-panel-header>
+                                            <v-expansion-panel-content>
+                                                <v-expansion-panels>
+                                                    <v-expansion-panel>
+                                                        <v-expansion-panel-header>
+                                                            Rejoindre GoToucan en tant que première personne de votre organisme à vous y connecter
+                                                        </v-expansion-panel-header>
+                                                        <v-expansion-panel-content>
+                                                            Vous devez d'abord communiquer avec Moisson Estrie (<a target="_blank" href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com<i class="mdi mdi-open-in-new"></i>
+                                                            </a>) pour recevoir une invitation à rejoindre la plateforme. Vous devez indiquer avec quelle adresse courriel vous souhaitez créer votre compte. Vous pourrez ensuite suivre le lien qui vous sera envoyé par courriel pour la création du compte. Vous aurez finalement la possibilité d'inviter les autres personnes de votre organisme à rejoindre la plateforme.
+                                                            <br><b>Ne partagez pas vos informations de connexion: Pour votre sécurité et celle des personnes dont les informations seront disponibles dans GoToucan, assurez vous que chaque personne ait un accès individuel.</b>
+                                                        </v-expansion-panel-content>
+                                                    </v-expansion-panel>
+                                                    <v-expansion-panel>
+                                                        <v-expansion-panel-header>
+                                                            Inviter d'autres personnes à rejoindre votre organisme sur GoToucan
+                                                        </v-expansion-panel-header>
+                                                        <v-expansion-panel-content>
+                                                            <v-list>
+                                                                <v-list-content>
+                                                                </v-list-content>
+                                                            </v-list>
+                                                        </v-expansion-panel-content>
+                                                    </v-expansion-panel>
+                                                </v-expansion-panels>
+                                            </v-expansion-panel-content>
+                                        </v-expansion-panel>
+                                    </v-expansion-panels>
                                 </v-tab-item>
 
                                 <!-- Support -->
@@ -61,18 +108,23 @@
                                                 <a target="_blank" href="https://www.moissonestrie.com/pages/notre-equipe#shopify-section-template--17135021883578__block_text_columns_HtN9d3">Maxime Roy<i class="mdi mdi-open-in-new"></i>
                                                 </a>
                                                 (iel/elle/il)
-                                            </p>
-                                            <p>
-                                                Responsable du support informatique et de la numérisation
+                                                <br>
+                                                <b>Responsable du support informatique et de la numérisation</b>
                                             </p>
                                             <p>
                                                 Courriel:
                                                 <a target="_blank" href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com</a>
+                                                <br>
+                                                <b>...bientôt disponible...
+                                                </b>Téléphone: 819-822-6025 poste 142
+                                                <br>
+                                                <a target="_blank" href="https://outlook.office.com/bookwithme/user/910ea8cb90754f7fa6b64220116673ee@moissonestrie.com?anonymous&ep=signature&ismsaljsauthenabled">Planifier une rencontre pour du support (Microsoft Booking)<i class="mdi mdi-open-in-new"></i>
+                                                </a>
                                             </p>
-                                            <p>
-                                                Téléphone: 819-822-6025 poste 142
-                                                <b>...bientôt disponible</b>
-                                            </p>
+                                            <p class="blockquote">Dès maintenant, je suis disponible pour du soutien ponctuel concernant le logiciel
+                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                                </a>
+                                                et les plateformes de formation. Pour les systèmes qui ne peuvent être remplacés, je serai également en mesure de vous guider vers une solution permettant le transfert automatisé des données requises.</p>
                                         </v-card-text>
                                     </v-card>
                                 </v-tab-item>
@@ -112,7 +164,7 @@
                                             </v-timeline-item>
                                             <v-timeline-item>
                                                 <v-card>
-                                                    <v-card-title>Volet Commande et Partages</v-card-title>
+                                                    <v-card-title>Volet Commandes et Partages</v-card-title>
                                                 </v-card>
                                             </v-timeline-item>
                                             <v-timeline-item>
@@ -146,9 +198,23 @@
                                             <a target="_blank" href="https://pr2.ca/">PR2<i class="mdi mdi-open-in-new"></i>
                                             </a>
                                         </v-card-title>
-                                        <v-card-text>"C'est la firme qui a créé et maintient à jour le matériel de formation et qui accompagne les organismes pendant leur apprentissage et leurs premiers pas sur la plateforme."<br/>PR2 - Programme de numérisation des activités d'aide alimentaire
-                                            <br/>
-                                            Vous devez d'abord vous inscrire en suivant le lien vers le sondage.
+                                        <v-card-text>
+                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                                C'est la firme qui a créé et maintient à jour le matériel de formation et qui accompagne les organismes pendant leur apprentissage et leurs premiers pas sur la plateforme.
+                                            </blockquote>
+                                            <p>—
+                                                <cite>
+                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                                    </a>
+                                                </cite>
+                                            </p>
+                                            <p>
+                                                <b>Programme de numérisation des activités d'aide alimentaire</b>
+                                                <br/>
+                                                Activités de formation et forum en lien avec la numérisation.
+                                                <br/>
+                                                Vous devez d'abord vous inscrire en suivant le lien vers le sondage.
+                                            </p>
                                         </v-card-text>
                                         <v-card-actions>
                                             <v-btn href="https://pr2ca.odoo.com/survey/start/13829410-d4eb-453f-ad8c-730789dada71">Inscription<i class="mdi mdi-open-in-new"></i>
@@ -163,31 +229,72 @@
                                             </a>
                                         </v-card-title>
                                         <v-card-text>
-                                            "C'est le développeur de la plateforme de numérisation
-                                            <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
-                                            </a>."
+                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                                C'est le développeur de la plateforme de numérisation
+                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                                </a>.
+                                            </blockquote>
+                                            <p>—
+                                                <cite>
+                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                                    </a>
+                                                </cite>
+                                            </p>
                                         </v-card-text>
                                     </v-card>
                                     <v-card>
                                         <v-card-title>
-                                            <a target="_blank" href="https://foodbankscanada.ca/fr/">Banques alimentaires Canada<i class="mdi mdi-open-in-new"></i>
+                                            <a target="_blank" href="https://www.moissonestrie.com/">Moisson Estrie (Membre Moisson et associés)<i class="mdi mdi-open-in-new"></i>
                                             </a>
                                         </v-card-title>
-                                        <v-card-text>"C'est l'organisme national à l'origine du Bilan-Faim et initiateur du projet de numérisation."</v-card-text>
+                                        <v-card-text>
+                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                                Les membres de BAQ sont responsables de transmettre l'information sur le proiet à leurs organismes accrédités et de s'assurer que ceux-ci l'intègrent dans les délais prévus. C'est la Moisson ou le membre associé qui est responsable d'inviter ses organismes à la plateforme GoToucan et de leur envoyer le lien d'accès aux formations.
+                                            </blockquote>
+                                            <p>—
+                                                <cite>
+                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                                    </a>
+                                                </cite>
+                                            </p>
+                                        </v-card-text>
                                     </v-card>
                                     <v-card>
                                         <v-card-title>
-                                            <a target="_blank" href="https://banquesalimentaires.org/">Banques alimentaires du Québec<i class="mdi mdi-open-in-new"></i>
+                                            <a target="_blank" href="https://foodbankscanada.ca/fr/">BAC (Banques alimentaires Canada)<i class="mdi mdi-open-in-new"></i>
                                             </a>
                                         </v-card-title>
-                                        <v-card-text>"C'est l'association provinciale qui regroupe 33 membres (Moisson et associés) et qui est responsable du déploiement de
-                                            <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                        <v-card-text>
+                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                                C'est l'organisme national à l'origine du Bilan-Faim et initiateur du projet de numérisation.
+                                            </blockquote>
+                                            <p>—
+                                                <cite>
+                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                                    </a>
+                                                </cite>
+                                            </p>
+                                        </v-card-text>
+                                    </v-card>
+                                    <v-card>
+                                        <v-card-title>
+                                            <a target="_blank" href="https://banquesalimentaires.org/">BAQ (Banques alimentaires du Québec)<i class="mdi mdi-open-in-new"></i>
                                             </a>
-                                            auprès de ses membres et leurs organismes accrédités."</v-card-text>
-                                        <v-card-actions>
-                                            <v-btn href="assets\aide-mémoire-numérisation.pdf">Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                            </v-btn>
-                                        </v-card-actions>
+                                        </v-card-title>
+                                        <v-card-text>
+                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                                C'est l'association provinciale qui regroupe 33 membres (Moisson et associés) et qui est responsable du déploiement de
+                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                                </a>
+                                                auprès de ses membres et leurs organismes accrédités.
+                                            </blockquote>
+                                            <p>—
+                                                <cite>
+                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                                    </a>
+                                                </cite>
+                                            </p>
+                                        </v-card-text>
                                     </v-card>
                                 </v-tab-item>
                             </v-tabs>
