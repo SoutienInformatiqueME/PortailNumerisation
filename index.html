@@ -21,25 +21,13 @@
 
     <body>
         <div id="app">
-            <v-app>
-                <v-container
-                    fluid>
-                    <!-- shrink-on-scroll fade-img-on-scroll -->
-                    <v-app-bar scroll-target="#scrolling-techniques-3" min-height="150" src="https://cdn-ch-prod-bqhwa0ewbpg6eyc2.z01.azurefd.net/prod-img-cache/CDN-ik-images/charityprofile/4/3193/Moisson-Estrie-logo-01_vpD2TEh.png" dark>
+            <v-app style="background: linear-gradient(135deg, rgba(0, 255, 34, 0) 60%, rgba(245, 163, 39, 0.911));">
+                <v-container fluid class="transparent-container">
+                    <v-app-bar shrink-on-scroll fade-img-on-scroll prominent src="https://cdn-ch-prod-bqhwa0ewbpg6eyc2.z01.azurefd.net/prod-img-cache/CDN-ik-images/charityprofile/4/3193/Moisson-Estrie-logo-01_vpD2TEh.png">
                         <template v-slot:img="{ props }">
-                            <v-img max-height="150" contain v-bind="props"></v-img>
+                            <v-img contain v-bind="props"></v-img>
                         </template>
                         <v-app-bar-title>Portail Numérisation</v-app-bar-title>
-<<<<<<< Updated upstream
-                        <template v-slot:extension>
-                            <v-tabs>
-                                <!-- TABS -->
-                                <v-tab>Accueil</v-tab>
-                                <v-tab>Tutoriels</v-tab>
-                                <v-tab>Support</v-tab>
-                                <v-tab>Activités de formation</v-tab>
-                                <v-tab>Ressources externes</v-tab>
-=======
                     </v-app-bar>
                     <v-tabs vertical>
                         <v-hover v-slot="{ hover }">
@@ -72,290 +60,283 @@
                                 <v-chip label v-if="hover" style="white-space: normal; word-wrap: break-word; max-width: 120px;">Ressources externes</v-chip>
                             </v-tab>
                         </v-hover>
->>>>>>> Stashed changes
 
-                                <!-- Accueil -->
-                                <v-tab-item>
+                        <!-- Accueil -->
+                        <v-tab-item>
+                            <v-card>
+                                <v-card-title>
+                                    <span>Support informatique à la numérisation par
+                                        <a target="_blank" href="https://www.moissonestrie.com/">
+                                            Moisson Estrie<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                    </span>
+                                </v-card-title>
+                                <v-card-text>
+                                    <p>Tel que formulé par
+                                        <a target="_blank" href="https://foodbankscanada.ca/fr/">BAC (Banques alimentaires Canada)<i class="mdi mdi-open-in-new"></i>
+                                        </a>, le Bilan-Faim par sera bientôt réalisé mensuellement. Pour atteindre cet objectif,
+                                        <a target="_blank" href="https://banquesalimentaires.org/">BAQ (Banques alimentaires du Québec)<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                        introduit le logiciel
+                                        <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                        développé par
+                                        <a target="_blank" href="https://www.toucansolutions.ca/">Toucan Solution<i class="mdi mdi-open-in-new"></i>
+                                        </a>. En plus d’offrir une multitude de fonctionnalités adaptées à vos opérations, GoToucan facilite grandement la collecte des données nécessaires au Bilan-Faim. Pour vous accompagner, Moisson Estrie vous proposera des activités de formation visant à vous assurer un usage confortable et autonome du logiciel GoToucan.</p>
+                                    <p>Vous trouverez, dans ce portail, des aide-mémoires concernant l'utilisation de GoToucan ainsi que des lien vers différentes sources pertinentes d'information.</p>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                        </v-tab-item>
+
+                        <!-- Tutoriels -->
+                        <v-tab-item>
+                            <v-expansion-panels focusable>
+                                <v-expansion-panel>
+                                    <v-expansion-panel-header>
+                                        Connexion à GoToucan
+                                    </v-expansion-panel-header>
+                                    <v-expansion-panel-content>
+                                        <v-expansion-panels>
+                                            <v-expansion-panel>
+                                                <v-expansion-panel-header>
+                                                    Rejoindre GoToucan en tant que première personne de votre organisme à vous y connecter
+                                                </v-expansion-panel-header>
+                                                <v-expansion-panel-content>
+                                                    Vous devez d'abord communiquer avec Moisson Estrie (<a target="_blank" href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com<i class="mdi mdi-open-in-new"></i>
+                                                    </a>) pour recevoir une invitation à rejoindre la plateforme. Vous devez indiquer avec quelle adresse courriel vous souhaitez créer votre compte. Vous pourrez ensuite suivre le lien qui vous sera envoyé par courriel pour la création du compte. Vous aurez finalement la possibilité d'inviter les autres personnes de votre organisme à rejoindre la plateforme.
+                                                    <br><b>Ne partagez pas vos informations de connexion: Pour votre sécurité et celle des personnes dont les informations seront disponibles dans GoToucan, assurez vous que chaque personne ait un accès individuel.</b>
+                                                </v-expansion-panel-content>
+                                            </v-expansion-panel>
+                                            <v-expansion-panel>
+                                                <v-expansion-panel-header>
+                                                    Inviter d'autres personnes à rejoindre votre organisme sur GoToucan
+                                                </v-expansion-panel-header>
+                                                <v-expansion-panel-content>
+                                                    <v-list>
+                                                        <v-list-content>
+                                                            <v-list-item>
+                                                                <v-list-item-content>1. Connectez-vous à votre compte GoToucan.</v-list-item-content>
+                                                            </v-list-item>
+                                                            <v-list-item>
+                                                                <v-list-item-content>
+                                                                    <v-container>
+                                                                        <v-row justify="start">
+                                                                            <span>2. Pour inviter une personne, vous devez d'abord faire la création d'une personne en utilisant le module Contact</span>
+                                                                            <v-img contain max-height="250" src="assets\Captures\module_contact.png"></v-img>
+                                                                        </v-row>
+                                                                    </v-container>
+                                                                    <v-list>
+                                                                        <v-list-item>
+                                                                            <v-list-item-content>a. Sélectionnez la "baguette magique" dans le coin supérieur droit, puis choisissez l'option "Ajouter une personne"</v-list-item-content>
+                                                                        </v-list-item>
+                                                                        <v-list-item>
+                                                                            <v-list-item-content>b. Complétez le formulaire en y indiquant minimalement l'adresse courriel de la personne à inviter</v-list-item-content>
+                                                                        </v-list-item>
+                                                                        <v-list-item>
+                                                                            <v-list-item-content>c. Vous serez ensuite invité à associer la personne à votre organisme.</v-list-item-content>
+                                                                        </v-list-item>
+                                                                    </v-list>
+                                                                </v-list-item-content>
+                                                            </v-list-item>
+                                                        </v-list-content>
+                                                    </v-list>
+                                                </v-expansion-panel-content>
+                                            </v-expansion-panel>
+                                        </v-expansion-panels>
+                                    </v-expansion-panel-content>
+                                </v-expansion-panel>
+                            </v-expansion-panels>
+                        </v-tab-item>
+
+                        <!-- Support -->
+                        <v-tab-item>
+                            <v-card>
+                                <v-card-text>
+                                    <p>
+                                        <a target="_blank" href="https://www.moissonestrie.com/pages/notre-equipe#shopify-section-template--17135021883578__block_text_columns_HtN9d3">Maxime Roy<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                        (iel/elle/il)
+                                        <br>
+                                        <b>Responsable du support informatique et de la numérisation</b>
+                                    </p>
+                                    <p>
+                                        Courriel:
+                                        <a target="_blank" href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com</a>
+                                        <br>
+                                        <b>...bientôt disponible...
+                                        </b>Téléphone: 819-822-6025 poste 142
+                                        <br>
+                                        <a target="_blank" href="https://outlook.office.com/bookwithme/user/910ea8cb90754f7fa6b64220116673ee@moissonestrie.com?anonymous&ep=signature&ismsaljsauthenabled">Planifier une rencontre pour du support (Microsoft Booking)<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                    </p>
+                                    <p class="blockquote">Dès maintenant, je suis disponible pour du soutien ponctuel concernant le logiciel
+                                        <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                        et les plateformes de formation. Pour les systèmes qui ne peuvent être remplacés, je serai également en mesure de vous guider vers une solution permettant le transfert automatisé des données requises.</p>
+                                </v-card-text>
+                            </v-card>
+                        </v-tab-item>
+
+                        <!-- Activités de formation -->
+                        <v-tab-item>
+                            <v-card>
+                                <v-card-title>
+                                    <span>Activités de formation à la plateforme
+                                        <a target="_blank" href="https://gotoucan.app/">
+                                            GoToucan<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                    </span>
+                                </v-card-title>
+                                <v-card-text>
+                                    Les activités sont des périodes de 1h de vidéo-conférence en petits groupes où vous apprendrez à utiliser les différents modules de la plateforme.
+                                </v-card-text>
+                                <v-card>
                                     <v-card>
-                                        <v-card-title>
-                                            <div>Support informatique à la numérisation par
-                                                <a target="_blank" href="https://www.moissonestrie.com/">
-                                                    Moisson Estrie<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                            </div>
-                                        </v-card-title>
+                                        <v-card-title>Volet Contacts et Événements (préalables aux autres volets)</v-card-title>
                                         <v-card-text>
-                                            <p>Tel que formulé par
-                                                <a target="_blank" href="https://foodbankscanada.ca/fr/">BAC (Banques alimentaires Canada)<i class="mdi mdi-open-in-new"></i>
-                                                </a>, le Bilan-Faim par sera bientôt réalisé mensuellement. Pour atteindre cet objectif,
-                                                <a target="_blank" href="https://banquesalimentaires.org/">BAQ (Banques alimentaires du Québec)<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                                introduit le logiciel
-                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                                développé par
-                                                <a target="_blank" href="https://www.toucansolutions.ca/">Toucan Solution<i class="mdi mdi-open-in-new"></i>
-                                                </a>. En plus d’offrir une multitude de fonctionnalités adaptées à vos opérations, GoToucan facilite grandement la collecte des données nécessaires au Bilan-Faim. Pour vous accompagner, Moisson Estrie vous proposera des activités de formation visant à vous assurer un usage confortable et autonome du logiciel GoToucan.</p>
-                                            <p>Vous trouverez, dans ce portail, des aide-mémoires concernant l'utilisation de GoToucan ainsi que des lien vers différentes sources pertinentes d'information.</p>
-                                        </v-card-text>
-                                        <v-card-actions>
-                                            <v-btn target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                            </v-btn>
-                                        </v-card-actions>
-                                    </v-card>
-                                </v-tab-item>
-
-                                <!-- Tutoriels -->
-                                <v-tab-item>
-                                    <v-expansion-panels focusable>
-                                        <v-expansion-panel>
-                                            <v-expansion-panel-header>
-                                                Connexion à GoToucan
-                                            </v-expansion-panel-header>
-                                            <v-expansion-panel-content>
-                                                <v-expansion-panels>
-                                                    <v-expansion-panel>
-                                                        <v-expansion-panel-header>
-                                                            Rejoindre GoToucan en tant que première personne de votre organisme à vous y connecter
-                                                        </v-expansion-panel-header>
-                                                        <v-expansion-panel-content>
-                                                            Vous devez d'abord communiquer avec Moisson Estrie (<a target="_blank" href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com<i class="mdi mdi-open-in-new"></i>
-                                                            </a>) pour recevoir une invitation à rejoindre la plateforme. Vous devez indiquer avec quelle adresse courriel vous souhaitez créer votre compte. Vous pourrez ensuite suivre le lien qui vous sera envoyé par courriel pour la création du compte. Vous aurez finalement la possibilité d'inviter les autres personnes de votre organisme à rejoindre la plateforme.
-                                                            <br><b>Ne partagez pas vos informations de connexion: Pour votre sécurité et celle des personnes dont les informations seront disponibles dans GoToucan, assurez vous que chaque personne ait un accès individuel.</b>
-                                                        </v-expansion-panel-content>
-                                                    </v-expansion-panel>
-                                                    <v-expansion-panel>
-                                                        <v-expansion-panel-header>
-                                                            Inviter d'autres personnes à rejoindre votre organisme sur GoToucan
-                                                        </v-expansion-panel-header>
-                                                        <v-expansion-panel-content>
-                                                            <v-list>
-                                                                <v-list-content>
-                                                                    <v-list-item>
-                                                                        <v-list-item-content>1. Connectez-vous à votre compte GoToucan.</v-list-item-content>
-                                                                    </v-list-item>
-                                                                    <v-list-item>
-                                                                        <v-list-item-content>
-                                                                            <v-container>
-                                                                                <v-row justify="start">
-                                                                                    <div>2. Pour inviter une personne, vous devez d'abord faire la création d'une personne en utilisant le module Contact</div>
-                                                                                    <v-img contain max-height="250" src="assets\Captures\module_contact.png"></v-img>
-                                                                                </v-row>
-                                                                            </v-container>
-                                                                            <v-list>
-                                                                                <v-list-item>
-                                                                                    <v-list-item-content>a. Sélectionnez la "baguette magique" dans le coin supérieur droit, puis choisissez l'option "Ajouter une personne"</v-list-item-content>
-                                                                                </v-list-item>
-                                                                                <v-list-item>
-                                                                                    <v-list-item-content>b. Complétez le formulaire en y indiquant minimalement l'adresse courriel de la personne à inviter</v-list-item-content>
-                                                                                </v-list-item>
-                                                                                <v-list-item>
-                                                                                    <v-list-item-content>c. Vous serez ensuite invité à associer la personne à votre organisme.</v-list-item-content>
-                                                                                </v-list-item>
-                                                                            </v-list>
-                                                                        </v-list-item-content>
-                                                                    </v-list-item>
-                                                                </v-list-content>
-                                                            </v-list>
-                                                        </v-expansion-panel-content>
-                                                    </v-expansion-panel>
-                                                </v-expansion-panels>
-                                            </v-expansion-panel-content>
-                                        </v-expansion-panel>
-                                    </v-expansion-panels>
-                                </v-tab-item>
-
-                                <!-- Support -->
-                                <v-tab-item>
-                                    <v-card>
-                                        <v-card-text>
-                                            <p>
-                                                <a target="_blank" href="https://www.moissonestrie.com/pages/notre-equipe#shopify-section-template--17135021883578__block_text_columns_HtN9d3">Maxime Roy<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                                (iel/elle/il)
-                                                <br>
-                                                <b>Responsable du support informatique et de la numérisation</b>
-                                            </p>
-                                            <p>
-                                                Courriel:
-                                                <a target="_blank" href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com</a>
-                                                <br>
-                                                <b>...bientôt disponible...
-                                                </b>Téléphone: 819-822-6025 poste 142
-                                                <br>
-                                                <a target="_blank" href="https://outlook.office.com/bookwithme/user/910ea8cb90754f7fa6b64220116673ee@moissonestrie.com?anonymous&ep=signature&ismsaljsauthenabled">Planifier une rencontre pour du support (Microsoft Booking)<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                            </p>
-                                            <p class="blockquote">Dès maintenant, je suis disponible pour du soutien ponctuel concernant le logiciel
-                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                                et les plateformes de formation. Pour les systèmes qui ne peuvent être remplacés, je serai également en mesure de vous guider vers une solution permettant le transfert automatisé des données requises.</p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-tab-item>
-
-                                <!-- Activités de formation -->
-                                <v-tab-item>
-                                    <v-card>
-                                        <v-card-title>
-                                            <div>Activités de formation à la plateforme
-                                                <a target="_blank" href="https://gotoucan.app/">
-                                                    GoToucan<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                            </div>
-                                        </v-card-title>
-                                        <v-card-text>
-                                            Les activités sont des périodes de 1h de vidéo-conférence en petits groupes où vous apprendrez à utiliser les différents modules de la plateforme.
-                                        </v-card-text>
-                                        <v-card>
                                             <v-card>
-                                                <v-card-title>Volet Contacts et Événements (préalables aux autres volets)</v-card-title>
+                                                <v-card-title>Activité 1: Personnes, ménages et organisations</v-card-title>
                                                 <v-card-text>
-                                                    <v-card>
-                                                        <v-card-title>Activité 1: Personnes, ménages et organisations</v-card-title>
-                                                        <v-card-text>
-                                                            <v-list>
-                                                                <v-list-item>Loi 25</v-list-item>
-                                                                <v-list-item>Gestion des organisations</v-list-item>
-                                                                <v-list-item>Gestion des personnes et ménages</v-list-item>
-                                                            </v-list>
-                                                        </v-card-text>
-                                                    </v-card>
-                                                    <v-card>
-                                                        <v-card-title>Activité 2: Événements er Rapports</v-card-title>
-                                                        <v-card-text>
-                                                            <v-list>
-                                                                <v-list-item>Gestion des évènements</v-list-item>
-                                                                <v-list-item>Génération des rapports</v-list-item>
-                                                            </v-list>
-                                                        </v-card-text>
-                                                    </v-card>
+                                                    <v-list>
+                                                        <v-list-item>Loi 25</v-list-item>
+                                                        <v-list-item>Gestion des organisations</v-list-item>
+                                                        <v-list-item>Gestion des personnes et ménages</v-list-item>
+                                                    </v-list>
                                                 </v-card-text>
                                             </v-card>
                                             <v-card>
-                                                <v-card-title>Volet Commandes et Partages</v-card-title>
+                                                <v-card-title>Activité 2: Événements er Rapports</v-card-title>
+                                                <v-card-text>
+                                                    <v-list>
+                                                        <v-list-item>Gestion des évènements</v-list-item>
+                                                        <v-list-item>Génération des rapports</v-list-item>
+                                                    </v-list>
+                                                </v-card-text>
                                             </v-card>
-                                            <v-card>
-                                                <v-card-title>Volet Entreposage</v-card-title>
-                                            </v-card>
-                                        </v-card>
+                                        </v-card-text>
+                                    </v-card>
+                                    <v-card>
+                                        <v-card-title>Volet Commandes et Partages</v-card-title>
+                                    </v-card>
+                                    <v-card>
+                                        <v-card-title>Volet Entreposage</v-card-title>
+                                    </v-card>
+                                </v-card>
 
-                                    </v-card>
-                                </v-tab-item>
+                            </v-card>
+                        </v-tab-item>
 
-                                <!-- Ressources externes -->
-                                <v-tab-item>
-                                    <v-card>
-                                        <v-card-title>
-                                            <a target="_blank" href="https://pr2.ca/">PR2<i class="mdi mdi-open-in-new"></i>
+                        <!-- Ressources externes -->
+                        <v-tab-item>
+                            <v-card>
+                                <v-card-title>
+                                    <a target="_blank" href="https://pr2.ca/">PR2<i class="mdi mdi-open-in-new"></i>
+                                    </a>
+                                </v-card-title>
+                                <v-card-text>
+                                    <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                        C'est la firme qui a créé et maintient à jour le matériel de formation et qui accompagne les organismes pendant leur apprentissage et leurs premiers pas sur la plateforme.
+                                    </blockquote>
+                                    <p>—
+                                        <cite>
+                                            <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
                                             </a>
-                                        </v-card-title>
-                                        <v-card-text>
-                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
-                                                C'est la firme qui a créé et maintient à jour le matériel de formation et qui accompagne les organismes pendant leur apprentissage et leurs premiers pas sur la plateforme.
-                                            </blockquote>
-                                            <p>—
-                                                <cite>
-                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                                    </a>
-                                                </cite>
-                                            </p>
-                                            <p>
-                                                <b>Programme de numérisation des activités d'aide alimentaire sur Oodo</b>
-                                                <br/>
-                                                Activités de formation et forum en lien avec la numérisation.
-                                                <br/>
-                                                Vous devez d'abord vous inscrire en suivant le lien ci-dessous.
-                                            </p>
-                                        </v-card-text>
-                                        <v-card-actions>
-                                            <v-btn target="_blank" href="https://pr2ca.odoo.com/survey/start/13829410-d4eb-453f-ad8c-730789dada71">Inscription<i class="mdi mdi-open-in-new"></i>
-                                            </v-btn>
-                                            <v-btn target="_blank" href="https://pr2ca.odoo.com/slides">Plateforme de formation Oodo<i class="mdi mdi-open-in-new"></i>
-                                            </v-btn>
-                                        </v-card-actions>
-                                    </v-card>
-                                    <v-card>
-                                        <v-card-title>
-                                            <a target="_blank" href="https://www.toucansolutions.ca/">Toucan Solutions<i class="mdi mdi-open-in-new"></i>
+                                        </cite>
+                                    </p>
+                                    <p>
+                                        <b>Programme de numérisation des activités d'aide alimentaire sur Oodo</b>
+                                        <br/>
+                                        Activités de formation et forum en lien avec la numérisation.
+                                        <br/>
+                                        Vous devez d'abord vous inscrire en suivant le lien ci-dessous.
+                                    </p>
+                                </v-card-text>
+                                <v-card-actions>
+                                    <v-btn target="_blank" href="https://pr2ca.odoo.com/survey/start/13829410-d4eb-453f-ad8c-730789dada71">Inscription<i class="mdi mdi-open-in-new"></i>
+                                    </v-btn>
+                                    <v-btn target="_blank" href="https://pr2ca.odoo.com/slides">Plateforme de formation Oodo<i class="mdi mdi-open-in-new"></i>
+                                    </v-btn>
+                                </v-card-actions>
+                            </v-card>
+                            <v-card>
+                                <v-card-title>
+                                    <a target="_blank" href="https://www.toucansolutions.ca/">Toucan Solutions<i class="mdi mdi-open-in-new"></i>
+                                    </a>
+                                </v-card-title>
+                                <v-card-text>
+                                    <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                        C'est le développeur de la plateforme de numérisation
+                                        <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                        </a>.
+                                    </blockquote>
+                                    <p>—
+                                        <cite>
+                                            <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
                                             </a>
-                                        </v-card-title>
-                                        <v-card-text>
-                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
-                                                C'est le développeur de la plateforme de numérisation
-                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
-                                                </a>.
-                                            </blockquote>
-                                            <p>—
-                                                <cite>
-                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                                    </a>
-                                                </cite>
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                    <v-card>
-                                        <v-card-title>
-                                            <a target="_blank" href="https://www.moissonestrie.com/">Moisson Estrie (Membre Moisson et associés)<i class="mdi mdi-open-in-new"></i>
+                                        </cite>
+                                    </p>
+                                </v-card-text>
+                            </v-card>
+                            <v-card>
+                                <v-card-title>
+                                    <a target="_blank" href="https://www.moissonestrie.com/">Moisson Estrie (Membre Moisson et associés)<i class="mdi mdi-open-in-new"></i>
+                                    </a>
+                                </v-card-title>
+                                <v-card-text>
+                                    <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                        Les membres de BAQ sont responsables de transmettre l'information sur le proiet à leurs organismes accrédités et de s'assurer que ceux-ci l'intègrent dans les délais prévus. C'est la Moisson ou le membre associé qui est responsable d'inviter ses organismes à la plateforme GoToucan et de leur envoyer le lien d'accès aux formations.
+                                    </blockquote>
+                                    <p>—
+                                        <cite>
+                                            <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
                                             </a>
-                                        </v-card-title>
-                                        <v-card-text>
-                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
-                                                Les membres de BAQ sont responsables de transmettre l'information sur le proiet à leurs organismes accrédités et de s'assurer que ceux-ci l'intègrent dans les délais prévus. C'est la Moisson ou le membre associé qui est responsable d'inviter ses organismes à la plateforme GoToucan et de leur envoyer le lien d'accès aux formations.
-                                            </blockquote>
-                                            <p>—
-                                                <cite>
-                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                                    </a>
-                                                </cite>
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                    <v-card>
-                                        <v-card-title>
-                                            <a target="_blank" href="https://foodbankscanada.ca/fr/">BAC (Banques alimentaires Canada)<i class="mdi mdi-open-in-new"></i>
+                                        </cite>
+                                    </p>
+                                </v-card-text>
+                            </v-card>
+                            <v-card>
+                                <v-card-title>
+                                    <a target="_blank" href="https://foodbankscanada.ca/fr/">BAC (Banques alimentaires Canada)<i class="mdi mdi-open-in-new"></i>
+                                    </a>
+                                </v-card-title>
+                                <v-card-text>
+                                    <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                        C'est l'organisme national à l'origine du Bilan-Faim et initiateur du projet de numérisation.
+                                    </blockquote>
+                                    <p>—
+                                        <cite>
+                                            <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
                                             </a>
-                                        </v-card-title>
-                                        <v-card-text>
-                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
-                                                C'est l'organisme national à l'origine du Bilan-Faim et initiateur du projet de numérisation.
-                                            </blockquote>
-                                            <p>—
-                                                <cite>
-                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                                    </a>
-                                                </cite>
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                    <v-card>
-                                        <v-card-title>
-                                            <a target="_blank" href="https://banquesalimentaires.org/">BAQ (Banques alimentaires du Québec)<i class="mdi mdi-open-in-new"></i>
+                                        </cite>
+                                    </p>
+                                </v-card-text>
+                            </v-card>
+                            <v-card>
+                                <v-card-title>
+                                    <a target="_blank" href="https://banquesalimentaires.org/">BAQ (Banques alimentaires du Québec)<i class="mdi mdi-open-in-new"></i>
+                                    </a>
+                                </v-card-title>
+                                <v-card-text>
+                                    <blockquote cite="assets\aide-mémoire-numérisation.pdf">
+                                        C'est l'association provinciale qui regroupe 33 membres (Moisson et associés) et qui est responsable du déploiement de
+                                        <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
+                                        </a>
+                                        auprès de ses membres et leurs organismes accrédités.
+                                    </blockquote>
+                                    <p>—
+                                        <cite>
+                                            <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
                                             </a>
-                                        </v-card-title>
-                                        <v-card-text>
-                                            <blockquote cite="assets\aide-mémoire-numérisation.pdf">
-                                                C'est l'association provinciale qui regroupe 33 membres (Moisson et associés) et qui est responsable du déploiement de
-                                                <a target="_blank" href="https://gotoucan.app/">GoToucan<i class="mdi mdi-open-in-new"></i>
-                                                </a>
-                                                auprès de ses membres et leurs organismes accrédités.
-                                            </blockquote>
-                                            <p>—
-                                                <cite>
-                                                    <a target="_blank" href="assets\aide-mémoire-numérisation.pdf">BAQ - Aide-mémoire Numérisation<i class="mdi mdi-open-in-new"></i>
-                                                    </a>
-                                                </cite>
-                                            </p>
-                                        </v-card-text>
-                                    </v-card>
-                                </v-tab-item>
-                            </v-tabs>
-                        </template>
-                    </v-app-bar>
-                    <!-- FIXME : Je sais pas pourquoi, mais [une balise quelconque] avec ce id est nécéssaire au scroll, et doit être APRÈS le v-app-bar -->
-                    <div id="scrolling-techniques-3">
-                        <v-container style="height: 500px;"></v-container>
-                    </div>
+                                        </cite>
+                                    </p>
+                                </v-card-text>
+                            </v-card>
+                        </v-tab-item>
+                    </v-tabs>
                 </v-container>
             </v-app>
         </div>
@@ -365,3 +346,9 @@
 <script>
     new Vue({el: "#app", vuetify: new Vuetify()});
 </script>
+
+<style>
+.transparent-container * {
+  background-color: transparent !important;
+}
+</style>
