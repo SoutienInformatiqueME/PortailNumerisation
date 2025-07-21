@@ -30,6 +30,7 @@
                             <v-img max-height="150" contain v-bind="props"></v-img>
                         </template>
                         <v-app-bar-title>Portail Numérisation</v-app-bar-title>
+<<<<<<< Updated upstream
                         <template v-slot:extension>
                             <v-tabs>
                                 <!-- TABS -->
@@ -38,6 +39,40 @@
                                 <v-tab>Support</v-tab>
                                 <v-tab>Activités de formation</v-tab>
                                 <v-tab>Ressources externes</v-tab>
+=======
+                    </v-app-bar>
+                    <v-tabs vertical>
+                        <v-hover v-slot="{ hover }">
+                            <v-tab>
+                                <v-icon>mdi-home</v-icon>
+                                <v-chip label v-if="hover" style="white-space: normal; word-wrap: break-word; max-width: 120px;">Accueil</v-chip>
+                            </v-tab>
+                        </v-hover>
+                        <v-hover v-slot="{ hover }">
+                            <v-tab>
+                                <v-icon>mdi-help-circle</v-icon>
+                                <v-chip label v-if="hover" style="white-space: normal; word-wrap: break-word; max-width: 120px;">Tutoriels</v-chip>
+                            </v-tab>
+                        </v-hover>
+                        <v-hover v-slot="{ hover }">
+                            <v-tab>
+                                <v-icon>mdi-face-agent</v-icon>
+                                <v-chip label v-if="hover" style="white-space: normal; word-wrap: break-word; max-width: 120px;">Support</v-chip>
+                            </v-tab>
+                        </v-hover>
+                        <v-hover v-slot="{ hover }">
+                            <v-tab>
+                                <v-icon>mdi-school</v-icon>
+                                <v-chip label v-if="hover" style="white-space: normal; word-wrap: break-word; max-width: 120px;">Activités de formation</v-chip>
+                            </v-tab>
+                        </v-hover>
+                        <v-hover v-slot="{ hover }">
+                            <v-tab>
+                                <v-icon>mdi-link</v-icon>
+                                <v-chip label v-if="hover" style="white-space: normal; word-wrap: break-word; max-width: 120px;">Ressources externes</v-chip>
+                            </v-tab>
+                        </v-hover>
+>>>>>>> Stashed changes
 
                                 <!-- Accueil -->
                                 <v-tab-item>
