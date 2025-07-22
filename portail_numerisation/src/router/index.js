@@ -1,9 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import AideMemoireNumerisation from '@/pages/AideMemoireNumerisation.vue'
 import Accueil from '@/pages/Accueil.vue'
 import Tutoriels from '@/pages/Tutoriels.vue'
+import Soutien from '@/pages/Soutien.vue'
+import ActivitesFormation from '@/pages/ActivitesFormation.vue'
+import RessourcesExternes from '@/pages/RessourcesExternes.vue'
 
+import AideMemoireNumerisation from '@/pages/AideMemoireNumerisation.vue'
 const routes = [
   {
     path: '/PortailNumerisation',
@@ -12,6 +15,22 @@ const routes = [
   {
     path: '/PortailNumerisation/Tutoriels',
     component: Tutoriels
+  },
+  {
+    path: '/PortailNumerisation/Soutien',
+    component: Soutien
+  },
+  {
+    path: '/PortailNumerisation/ActivitesFormation',
+    component: ActivitesFormation
+  },
+  {
+    path: '/PortailNumerisation/RessourcesExternes',
+    component: RessourcesExternes
+  },
+  {
+    path: '/PortailNumerisation/AideMemoireNumerisation',
+    component: AideMemoireNumerisation
   },
 ]
 
