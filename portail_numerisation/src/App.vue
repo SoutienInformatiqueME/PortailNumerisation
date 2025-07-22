@@ -1,9 +1,12 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Navigation from './layouts/Navigation.vue';
 </script>
 
 <template>
-  <div>
-    <p>Le portail est en cours de construction.</p>
-  </div>
+  <v-app>
+    <Navigation />
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
