@@ -1,5 +1,5 @@
 <template>
-    
+    <p>En construction</p>
 </template>
 
 <!-- <v-expansion-panels focusable>
