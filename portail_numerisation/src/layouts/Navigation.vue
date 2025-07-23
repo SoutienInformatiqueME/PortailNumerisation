@@ -5,7 +5,9 @@ import { useRoute } from 'vue-router';
 <template>
     <!-- TODO : navigation mobile -->
     <!-- expand-on-hover :rail="$route.path !== '/PortailNumerisation/'" -->
-    <v-navigation-drawer  expand-on-hover rail>
+    <v-navigation-drawer permanent expand-on-hover :rail="$route.path !== '/PortailNumerisation/' 
+    // && $route.path !== '/PortailNumerisation/Tutoriels'
+    ">
         <div>
             <v-list>
                 <v-list-item :to="{ path: '/PortailNumerisation/' }"
