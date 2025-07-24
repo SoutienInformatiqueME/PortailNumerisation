@@ -1,84 +1,67 @@
 <script setup>
-  import { ref } from 'vue'
-
-  const tab = ref('option-1')
+import homepage from '@/assets/captures/connexion/homepage.png';
 </script>
+
 <template>
-    <v-navigation-drawer expand-on-hover rail location="right">
-        <div class="text-h6 pa-2">Tutoriels</div>
-    </v-navigation-drawer>
   <v-card>
-    <div class="d-flex flex-row">
-      <v-tabs
-        v-model="tab"
-        color="primary"
-        direction="vertical"
-      >
-        <v-tab prepend-icon="mdi-account" text="Option 1" value="option-1"></v-tab>
-        <v-tab prepend-icon="mdi-lock" text="Option 2" value="option-2"></v-tab>
-        <v-tab prepend-icon="mdi-access-point" text="Option 3" value="option-3"></v-tab>
-      </v-tabs>
+    <v-tabs v-model="tab">
+      <v-tab value="Connexion">Connexion</v-tab>
+      <v-tab value="two">Item Two</v-tab>
+      <v-tab value="three">Item Three</v-tab>
+    </v-tabs>
 
+    <v-card-text>
       <v-tabs-window v-model="tab">
-        <v-tabs-window-item value="option-1">
-          <v-card flat>
+        <v-tabs-window-item value="Connexion">
+          <v-card>
+            <v-card-title>Rejoindre GoToucan en tant que première personne de votre organisme à vous y
+              connecter</v-card-title>
             <v-card-text>
-              <p>
-                Sed aliquam ultrices mauris. Donec posuere vulputate arcu. Morbi ac felis. Etiam feugiat lorem non metus. Sed a libero.
-              </p>
-
-              <p>
-                Nam ipsum risus, rutrum vitae, vestibulum eu, molestie vel, lacus. Aenean tellus metus, bibendum sed, posuere ac, mattis non, nunc. Aliquam lobortis. Aliquam lobortis. Suspendisse non nisl sit amet velit hendrerit rutrum.
-              </p>
-
-              <p class="mb-0">
-                Phasellus dolor. Fusce neque. Fusce fermentum odio nec arcu. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Phasellus blandit leo ut odio.
-              </p>
+              <span>
+                Vous devez d'abord communiquer avec Moisson Estrie (<a target="_blank"
+                  href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com<i
+                    class="mdi mdi-open-in-new"></i>
+                </a>) pour recevoir une invitation à rejoindre la plateforme. Vous devez indiquer avec quelle adresse
+                courriel vous souhaitez créer votre compte.
+                <br />Vous pourrez ensuite suivre le lien qui vous sera envoyé par
+                courriel pour la création du compte.
+                <br><b>Ne partagez pas vos informations de connexion: Pour votre sécurité et celle des personnes dont
+                  les informations seront disponibles dans GoToucan, assurez vous que chaque personne ait un accès
+                  individuel.</b>
+              </span>
+            </v-card-text>
+          </v-card>
+          <v-card>
+            <v-card-title>Inviter d'autres personnes à rejoindre votre organisme sur GoToucan</v-card-title>
+            <v-card-text>
+              <div>
+                <span>Connectez-vous à votre compte sur GoToucan puis sélectionnez la communauté de votre organisme.</span>
+                <v-img :src="homepage" alt="homepage.png"></v-img>
+              </div> 
+              <br /><span>Pour inviter quelqu'un, vous devez d'abord faire la création de cette personne en utilisant le
+                module Contact (sauf si vous l'avez précédement fait).</span>
+              <br /><span>Une fois la personne crée, assurez-vous d'être sur la page de la personne puis sélectionnez la "baguette magique".</span>
+              <br /><span>Sélectionnez l'outil "Invitations".</span>
+              <br /><span>Suivez les instructions à l'écran pour finaliser l'invitation.</span>
             </v-card-text>
           </v-card>
         </v-tabs-window-item>
 
-        <v-tabs-window-item value="option-2">
-          <v-card flat>
-            <v-card-text>
-              <p>
-                Morbi nec metus. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Nunc sed turpis.
-              </p>
-
-              <p>
-                Suspendisse feugiat. Suspendisse faucibus, nunc et pellentesque egestas, lacus ante convallis tellus, vitae iaculis lacus elit id tortor. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In hac habitasse platea dictumst. Fusce ac felis sit amet ligula pharetra condimentum.
-              </p>
-
-              <p>
-                Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Nam commodo suscipit quam. In consectetuer turpis ut velit. Sed cursus turpis vitae tortor. Aliquam eu nunc.
-              </p>
-
-              <p>
-                Etiam ut purus mattis mauris sodales aliquam. Ut varius tincidunt libero. Aenean viverra rhoncus pede. Duis leo. Fusce fermentum odio nec arcu.
-              </p>
-
-              <p class="mb-0">
-                Donec venenatis vulputate lorem. Aenean viverra rhoncus pede. In dui magna, posuere eget, vestibulum et, tempor auctor, justo. Fusce commodo aliquam arcu. Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.
-              </p>
-            </v-card-text>
-          </v-card>
+        <v-tabs-window-item value="two">
+          Two
         </v-tabs-window-item>
 
-        <v-tabs-window-item value="option-3">
-          <v-card flat>
-            <v-card-text>
-              <p>
-                Fusce a quam. Phasellus nec sem in justo pellentesque facilisis. Nam eget dui. Proin viverra, ligula sit amet ultrices semper, ligula arcu tristique sapien, a accumsan nisi mauris ac eros. In dui magna, posuere eget, vestibulum et, tempor auctor, justo.
-              </p>
-
-              <p class="mb-0">
-                Cras sagittis. Phasellus nec sem in justo pellentesque facilisis. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nam at tortor in tellus interdum sagittis.
-              </p>
-            </v-card-text>
-          </v-card>
+        <v-tabs-window-item value="three">
+          Three
         </v-tabs-window-item>
       </v-tabs-window>
-    </div>
+    </v-card-text>
   </v-card>
 </template>
-
+<script>
+export default {
+  data: () => ({
+    tab: null,
+  }),
+}
+</script>
