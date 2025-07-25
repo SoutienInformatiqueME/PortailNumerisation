@@ -36,7 +36,7 @@ import homepage from '@/assets/captures/connexion/homepage.png';
             <v-card-text>
               <div>
                 <span>Connectez-vous à votre compte sur GoToucan puis sélectionnez la communauté de votre organisme.</span>
-                <v-img :src="homepage" alt="homepage.png"></v-img>
+                <v-img contain :src="homepage" alt="homepage.png"></v-img>
               </div> 
               <br /><span>Pour inviter quelqu'un, vous devez d'abord faire la création de cette personne en utilisant le
                 module Contact (sauf si vous l'avez précédement fait).</span>
