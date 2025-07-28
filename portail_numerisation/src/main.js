@@ -12,7 +12,12 @@ import router from './router'
 
 const vuetify = createVuetify({
     components,
-    directives
+    directives,
+    defaults: {
+        VCard: {
+            variant: 'outlined'
+        }
+    }
 })
 
 const app = createApp(App)
