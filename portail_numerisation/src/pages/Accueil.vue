@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <v-card>
         <v-card-title>
@@ -40,7 +37,7 @@
             </p>
         </v-card-text>
         <v-card-actions>
-            <v-btn target="_blank" href="/PortailNumerisation/AideMemoireNumerisation">BAQ - Aide-mémoire Numérisation<i
+            <v-btn target="_blank" href="https://soutieninformatiqueme.github.io/PortailNumerisation/docs/aide-m%C3%A9moire-num%C3%A9risation.pdf">BAQ - Aide-mémoire Numérisation<i
                     class="mdi mdi-open-in-new"></i>
             </v-btn>
         </v-card-actions>
