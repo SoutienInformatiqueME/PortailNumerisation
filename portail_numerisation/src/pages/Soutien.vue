@@ -14,9 +14,7 @@
                 Courriel:
                 <a target="_blank"
                     href="mailto:soutieninformatique@moissonestrie.com">soutieninformatique@moissonestrie.com</a>
-                <br>
-                <b>...bientôt disponible...
-                </b>Téléphone: 819-822-6025 poste 142
+                <br>Téléphone: 819-822-6025 poste 142
                 <br>
                 <a target="_blank"
                     href="https://outlook.office.com/bookwithme/user/910ea8cb90754f7fa6b64220116673ee@moissonestrie.com?anonymous&ep=signature&ismsaljsauthenabled">Planifier
