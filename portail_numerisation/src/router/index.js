@@ -6,7 +6,6 @@ import Soutien from '@/pages/Soutien.vue'
 import ActivitesFormation from '@/pages/ActivitesFormation.vue'
 import RessourcesExternes from '@/pages/RessourcesExternes.vue'
 
-import AideMemoireNumerisation from '@/pages/AideMemoireNumerisation.vue'
 const routes = [
   {
     path: '/PortailNumerisation',
@@ -27,10 +26,6 @@ const routes = [
   {
     path: '/PortailNumerisation/RessourcesExternes',
     component: RessourcesExternes
-  },
-  {
-    path: '/PortailNumerisation/AideMemoireNumerisation',
-    component: AideMemoireNumerisation
   },
 ]
 

@@ -18,7 +18,12 @@
                         <v-card-text>
                             <template v-for="(subject, index) in activity.subjects">
                                 {{ index }}. 
-                                <v-chip color="primary" v-tooltip="subject.description"><a target="_blank" :href="subject.link">{{ subject.name }}</a></v-chip><br />
+                                <v-chip color="primary" v-tooltip="subject.description">
+                                    <a target="_blank" :href="subject.link">
+                                        {{ subject.name }}
+                                        <v-icon v-if="subject.link">mdi-open-in-new</v-icon>
+                                    </a>
+                                </v-chip><br />
                             </template>
                         </v-card-text>
                     </v-card>
@@ -46,7 +51,7 @@ export default {
                                 },
                                 2: {
                                     name: 'Gestion des organisations',
-                                    description: 'Accès à la plateforme GoToucan et gestion des invitations'
+                                    description: 'Accès à la plateforme GoToucan et gestion des invitations',
                                 },
                                 3: {
                                     name: 'Gestion des personnes et ménages',
