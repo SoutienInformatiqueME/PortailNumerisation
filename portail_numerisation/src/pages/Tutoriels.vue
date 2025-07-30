@@ -16,7 +16,7 @@ import ajoutPersonne from '@/assets/captures/connexion/ajoutPersonne.png';
         <v-tabs-window-item value="Connexion">
           <v-card>
             <v-card-title>
-              Rejoindre GoToucan et la communauté de votre organisme à vous y connecter
+              Rejoindre GoToucan dans la communauté de votre organisme
             </v-card-title>
             <v-card-text>
               <span>

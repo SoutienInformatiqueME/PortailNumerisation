@@ -41,6 +41,9 @@ const route = useRoute()
 
     <v-main>
       <router-view class="ma-2" elevation="4" rounded="lg" />
+      
+    <p><small>Dernière mise à jour le 30 juillet 2025</small></p>
+    <p><small>Le Portail Numérisation n'est pas affilié à Banques alimentaires Canada, Banques alimentaires du Québec, Toucan Solutions ou PR2</small></p>
     </v-main>
   </v-layout>
 </template>
