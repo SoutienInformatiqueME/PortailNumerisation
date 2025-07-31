@@ -89,10 +89,7 @@ const route = useRoute();
         </small>
       </p>
       <p>
-        <small>
-          Dernière mise à jour le 
-          31 juillet 2025
-        </small>
+        <small> Dernière mise à jour le 31 juillet 2025 </small>
       </p>
     </v-main>
   </v-layout>
