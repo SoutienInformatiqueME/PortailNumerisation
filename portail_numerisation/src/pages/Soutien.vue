@@ -8,7 +8,7 @@
                 </a>
                 (iel/elle/il)
                 <br>
-                <b>Responsable du support informatique et de la numérisation</b>
+                <b>Responsable du soutien informatique et de la numérisation</b>
             </p>
             <p>
                 Courriel:
