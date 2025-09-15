@@ -35,7 +35,6 @@
 import { ref } from 'vue'
 
 const drawer = ref(false)
-const miniState = ref(true)
 
 function toggleLeftDrawer() {
   drawer.value = !drawer.value
