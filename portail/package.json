@@ -13,7 +13,7 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "postinstall": "quasar prepare",
-    "deploy": "quasar build && gh-pages -d dist/spa -b gh-pages"
+    "deploy": "quasar build && gh-pages -d dist/spa -b gh-pages -f"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
