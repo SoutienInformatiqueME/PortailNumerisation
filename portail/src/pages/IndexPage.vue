@@ -64,11 +64,15 @@
         </div>
       </q-card>
     </div>
+    <SoutienNumerisation/>
+    <InformationsGenerales/>
   </q-page>
 </template>
 
 <script setup>
 import { ref } from 'vue'
+import InformationsGenerales from './InformationsGenerales.vue';
+import SoutienNumerisation from './SoutienNumerisation.vue';
 
 const slide = ref('introduction')
 </script>
