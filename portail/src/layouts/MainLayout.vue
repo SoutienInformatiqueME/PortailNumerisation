@@ -34,6 +34,35 @@
           header
         >Pages
         </q-item-label>
+        <q-item clickable v-ripple to="/" active-class="active">
+              <q-item-section avatar>
+                <q-icon name="home" />
+              </q-item-section>
+
+              <q-item-section>
+                Accueil
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple to="/informations" active-class="active">
+              <q-item-section avatar>
+                <q-icon name="info" />
+              </q-item-section>
+
+              <q-item-section>
+                Informations
+              </q-item-section>
+            </q-item>
+
+            <q-item clickable v-ripple to="/soutien" active-class="active">
+              <q-item-section avatar>
+                <q-icon name="support_agent" />
+              </q-item-section>
+
+              <q-item-section>
+                Soutien
+              </q-item-section>
+            </q-item>
       </q-list>
     </q-drawer>
 
