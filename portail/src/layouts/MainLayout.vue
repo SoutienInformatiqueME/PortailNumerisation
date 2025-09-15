@@ -44,7 +44,7 @@
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple to="/informations" active-class="active">
+            <q-item clickable v-ripple :to="{ path: '/informations' }" active-class="active">
               <q-item-section avatar>
                 <q-icon name="info" />
               </q-item-section>
@@ -54,7 +54,7 @@
               </q-item-section>
             </q-item>
 
-            <q-item clickable v-ripple to="/soutien" active-class="active">
+            <q-item clickable v-ripple :to="{ path: '/soutien' }" active-class="active">
               <q-item-section avatar>
                 <q-icon name="support_agent" />
               </q-item-section>
@@ -62,6 +62,10 @@
               <q-item-section>
                 Soutien
               </q-item-section>
+            </q-item>
+
+            <q-item>
+              v 1.0
             </q-item>
       </q-list>
     </q-drawer>
