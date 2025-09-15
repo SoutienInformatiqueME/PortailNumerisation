@@ -12,7 +12,12 @@
         />
 
         <q-toolbar-title>
-          Quasar App
+          <q-img
+            alt="Logo Moisson Estrie"
+            src="https://cdn-ch-prod-bqhwa0ewbpg6eyc2.z01.azurefd.net/prod-img-cache/CDN-ik-images/charityprofile/4/3193/Moisson-Estrie-logo-01_vpD2TEh.png"
+            fit="contain"
+            style="max-height: 10vh"
+          />
         </q-toolbar-title>
 
         <div>Quasar v{{ $q.version }}</div>
