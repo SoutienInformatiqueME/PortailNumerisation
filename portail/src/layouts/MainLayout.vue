@@ -6,16 +6,6 @@
   </q-layout>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-const drawer = ref(false)
-
-function toggleLeftDrawer() {
-  drawer.value = !drawer.value
-}
-</script>
-
 <style scoped>
 @keyframes breathe {
   0%,
