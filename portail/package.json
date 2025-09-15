@@ -13,7 +13,7 @@
     "dev": "quasar dev",
     "build": "quasar build",
     "postinstall": "quasar prepare",
-    "deploy": "push-dir --dir=dist/spa --branch=gh-pages --cleanup"
+    "deploy": "quasar build && cp public/404.html dist/spa/ && push-dir --dir=dist/spa --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
