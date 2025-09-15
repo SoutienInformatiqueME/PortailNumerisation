@@ -65,7 +65,7 @@
             </q-item>
 
             <q-item>
-              v 1.0
+              v 1.1
             </q-item>
       </q-list>
     </q-drawer>
@@ -79,7 +79,7 @@
 <script setup>
 import { ref } from 'vue'
 
-const leftDrawerOpen = ref(false)
+const leftDrawerOpen = ref(true)
 
 function toggleLeftDrawer () {
   leftDrawerOpen.value = !leftDrawerOpen.value
