@@ -2,8 +2,12 @@
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-file
 
 import { defineConfig } from '#q-app/wrappers'
+import { execSync } from 'child_process';
 
 export default defineConfig((/* ctx */) => {
+  const lastCommitDate = execSync('git log -1 --format=%cd --date=iso-strict').toString().trim()
+  const lastCommitHash = execSync('git rev-parse --short HEAD').toString().trim()
+
   return {
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
     // preFetch: true,
@@ -35,6 +39,11 @@ export default defineConfig((/* ctx */) => {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-file#build
     build: {
+      env: {
+        LAST_COMMIT_DATE: lastCommitDate,
+        LAST_COMMIT_HASH: lastCommitHash
+      },
+
       target: {
         browser: [ 'es2022', 'firefox115', 'chrome115', 'safari14' ],
         node: 'node20'
